@@ -115,20 +115,20 @@ const App = ({ signOut }) => {
       </View>
       <Button onClick={signOut}>Sign Out</Button>
     </View>
-    <View
+    <View>
       name="image"
       as="input"
       type="file"
       style={{ alignSelf: "end" }}
-    />
+    </View>
   );
   {notes.map((note) => (
-    <Flex
+    <Flex>
       key={note.id || note.name}
       direction="row"
       justifyContent="center"
       alignItems="center"
-    /Flex>
+    </Flex>
       <Text as="strong" fontWeight={700}>
         {note.name}
       </Text>
@@ -138,7 +138,7 @@ const App = ({ signOut }) => {
           src={note.image}
           alt={`visual aid for ${notes.name}`}
           style={{ width: 400 }}
-        />
+        </Text>
       )}
       <Button variation="link" onClick={() => deleteNote(note)}>
         Delete note
