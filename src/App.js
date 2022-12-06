@@ -128,7 +128,7 @@ const App = ({ signOut }) => {
       direction="row"
       justifyContent="center"
       alignItems="center"
-    >
+    /Flex>
       <Text as="strong" fontWeight={700}>
         {note.name}
       </Text>
